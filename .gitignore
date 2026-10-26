@@ -3,6 +3,8 @@ node_modules
 out
 .env
 .env.local
+.env.*
+!.env.example
 npm-debug.log*
 .DS_Store
 coverage
