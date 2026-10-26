@@ -1,4 +1,6 @@
-import type { ReactNode } from "react";
+"use client";
+
+import { useState } from "react";
 
 export default function HomePage() {
   return (
@@ -28,7 +30,7 @@ function CodeAnalyzer() {
   const [result, setResult] = useState<{
     ok: boolean;
     language: string;
-    issues: Array<{ severity: string; message: string; line?: number; suggestion?: string }>; 
+    issues: Array<{ severity: string; message: string; line?: number; suggestion?: string }>;
     summary?: { totalIssues: number; severities: Record<string, number> };
     recommendations?: string[];
   } | null>(null);
@@ -167,5 +169,4 @@ function CodeAnalyzer() {
     </div>
   );
 }
-
 
