@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Vider Enjoy",
-  description: "AI chat application scaffold",
+  title: "Vider(enjoy)",
+  description: "AI coding assistant and code intelligence engine",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
